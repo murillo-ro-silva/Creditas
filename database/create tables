@@ -1,0 +1,40 @@
+create schema creditas;
+
+CREATE TABLE creditas.google_ads (
+ad_creative_id INT(15),
+ad_creative_name VARCHAR(255),
+clicks INT(15),
+cost DECIMAL(15,5),
+date DATETIME,
+google_campaign_id INT(15),
+google_campaign_name VARCHAR(255),
+impressions INT(15),
+integration_date DATETIME);
+
+
+CREATE TABLE creditas.facebook_ads (
+clicks DECIMAL(15,5),
+cost DECIMAL(15,5),
+date DATETIME,
+facebook_campaign_id INT(15),
+facebook_campaign_name VARCHAR(255),
+impressions INT(15),
+integration_date DATETIME);
+
+
+CREATE TABLE creditas.pageviews (
+device VARCHAR(255),
+referer VARCHAR(255),
+ad_creative_id VARCHAR(255),
+integration_date DATETIME);
+
+
+CREATE TABLE creditas.customer_lead_funnel (
+device_id VARCHAR(255),
+lead_id INT(15) ,
+registered_at DATETIME,
+credit_decision VARCHAR(255),
+credit_decision_at DATETIME,
+signed_at DATETIME,
+revenue DECIMAL(15,2),
+integration_date DATETIME);

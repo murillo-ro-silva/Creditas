@@ -17,9 +17,9 @@ In summary, my analysis should answer the 4 questions as described below:
 
 ### Docker Preparation:
 
-#####Jupyter + Spark:
+####Jupyter + Spark:
 
-1 - Download: Here.
+1 - Download: [Here](https://drive.google.com/file/d/11Czp83ZIxME5UPmFiY99KusyXj9OCztZ/view?usp=sharing)
 
 2 - Create dns network:
 ```bash
@@ -31,20 +31,22 @@ $ sudo docker network create ponte
 $ sudo docker image load -i "your download directory"/jupyter_spark_murillo.tar.gz
 ```
 
-4 - Run the command below to start an image with jupyter / spark.
+4 - Entry in clone project and then run the command below to start an image with jupyter / spark.
 
 ```bash
 $ sudo docker run --rm -p 10000:8888 --net=ponte --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes -v "$PWD":/home/jovyan/work jupyter/spark
 ```
 
-Obs: It will necessary inserts the generate key, as the sample image below:
+Obs:
+* Ít necessary to enter into project cloned for better navigation.
+* It will necessary inserts the generate key, as the sample image below:
 
 ![jupyter-example](jupyter-key-image.png)
 
 
-#####Mysql:
+####Mysql:
 
-1 - Download: Here.
+1 - Download: [Here](https://drive.google.com/file/d/1sIFLkiHp6ytBLpF162jItZ_9fBeRFNlz/view?usp=sharing)
 
 2 - After download completed, go to load docker image.
 ```bash
@@ -54,7 +56,6 @@ $ sudo docker image load -i "your download directory"/mysql.tar.gz
 3 - Run Docker
 ```bash
 $ sudo docker run --name=mysql_murillo --net=ponte -v "clone project diretory"/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql/mysql-server
-
 ```
 
 4 - Exec Docker
@@ -79,6 +80,7 @@ Brief explanation.
     - Structuring dataframes.
     - Save dataframes in parquets (Raw and Refined visions).
     - Save dataframe em Mysql Database.
+
 
 
 

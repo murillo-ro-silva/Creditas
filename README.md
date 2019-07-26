@@ -3,6 +3,7 @@
 
 ## The Problem: digital media effectiveness
 https://github.com/Creditas/challenge/tree/master/data-engineering
+<br />
 
 ## The solve problem: digital media effectiveness
 
@@ -12,9 +13,9 @@ In summary, my analysis should answer the 4 questions as described below:
 3. Which ad creative is the most effective in terms of clicks?
 4. Which ad creative is the most effective in terms of generating leads?
 
+<br />
+
 ### Docker Preparation:
-
-
 
 **Jupyter + Spark:**
 
@@ -41,10 +42,9 @@ Obs:
 * It will necessary inserts the generate key, as the sample image below:
 
 ![jupyter-example](images/jupyter-key-image.png)
-
-
-
-
+<br />
+<br />
+<br />
 **Mysql:**
 
 1 - Download: [Here](https://drive.google.com/file/d/1XVrRszyH42gx0hoM-6seIuhPkDPoONs0/view?usp=sharing)
@@ -68,9 +68,9 @@ Obs: Maybe, it will going to insert the password, if went requested, please info
 
 After load, run e exec. Its possible acess the mysql database and see all objects, such as Schema=`creditas` and all tables(`customer_lead_funnel`,`facebook_ads`,`google_ads`,`pageviews`) and own registers, as image below:
 ![jupyter-example](images/jupyter-key-image.png))
-
-
-
+<br />
+<br />
+<br />
 **Notebook Analysis:**
 
 Brief explanation.
@@ -87,7 +87,9 @@ Detailed explanations:
 Data exploration and structuring work has been done, which can be followed in detail by accessing the jupyter `AnalisysResult.ipynb`. After exploring data, context-specific dataframes were created, after structuring the data without filters was saved in the `Raw` directory within this project.
 
 The following is a view of the `Raw` structure of the data.
-
+<br />
+<br />
+<br />
 1 - Structure Process.
 
 1.1 -Post structure datadrame Google:
@@ -103,8 +105,9 @@ The following is a view of the `Raw` structure of the data.
 ![clf](images/df-customer-lead-funnel.png)
 
 After data saved in `Raw` was persisted in a MySql Local database (docker), being possible to access them through DataViz tools.
-
-
+<br />
+<br />
+<br />
 2 - Persist Process.
 
 2.1 - google_ads Table.
@@ -120,12 +123,13 @@ After data saved in `Raw` was persisted in a MySql Local database (docker), bein
 ![clf](images/my-sql-clf.png)
 
 obs: Both registers can be consulting in MySql Docker Database.
-
+<br />
+<br />
+<br />
 3 - Create and save visions in refined zone.
 
-3.1 - Most Expensive Vision.
+3.1 - Most Expensive Vision.<br />
 ![most-expens](images/result-most-expensive.png)
-
 
 3.2 - Most Profitable Vision.
 ![most-profitable](images/result-most-profitable.png)

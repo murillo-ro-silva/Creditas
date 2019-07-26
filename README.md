@@ -67,7 +67,7 @@ Obs: Maybe, it will going to insert the password, if went requested, please info
 
 
 After load, run e exec. Its possible acess the mysql database and see all objects, such as Schema=`creditas` and all tables(`customer_lead_funnel`,`facebook_ads`,`google_ads`,`pageviews`) and own registers, as image below:
-![jupyter-example](images/jupyter-key-image.png))
+![jupyter-example](images/jupyter-key-image.png)
 <br />
 <br />
 <br />
@@ -116,7 +116,7 @@ After data saved in `Raw` was persisted in a MySql Local database (docker), bein
 2.2 - facebook_ads Table.
 ![facebook](images/my-sql-facebook.png)
 
-2.3 - pageviews Table.
+2.3 - pageviews Table.<br />
 ![page](images/my-sql-pageviews.png)
 
 2.4 - customer_lead_funnel Table.
@@ -131,13 +131,13 @@ obs: Both registers can be consulting in MySql Docker Database.
 3.1 - Most Expensive Vision.<br />
 ![most-expens](images/result-most-expensive.png)
 
-3.2 - Most Profitable Vision.
+3.2 - Most Profitable Vision.<br />
 ![most-profitable](images/result-most-profitable.png)
 
-3.3 - Most Effective Clicks
+3.3 - Most Effective Clicks<br />
 ![most-effective-clicks](images/result-most-effective-clicks.png)
 
-3.4 - Most Effective Leads
+3.4 - Most Effective Leads<br />
 ![most-effetive-leads](images/result-most-effective-leads.png)
 
 3.5 - Save in parquets in Refined.

@@ -37,7 +37,7 @@ $ sudo docker run --rm -p 10000:8888 --net=ponte --user root -e JUPYTER_ENABLE_L
 ```
 
 Obs:
-* Ít necessary to enter into project cloned for better navigation.
+* It necessary to enter into project cloned for better navigation.
 * It will necessary inserts the generate key, as the sample image below:
 
 ![jupyter-example](images/jupyter-key-image.png)
@@ -71,7 +71,7 @@ After load, run e exec. Its possible acess the mysql database and see all object
 
 
 
-#####Notebook Analysis:
+**Notebook Analysis:**
 
 Brief explanation.
 * Into folder jupyter, your can find the archive `AnalisysResult.ipynb`, all the explorations went realized into, as well all the processing and anwers of the questions.
@@ -138,6 +138,7 @@ obs: Both registers can be consulting in MySql Docker Database.
 
 3.5 - Save in parquets in Refined.
 ![refined](images/refined-vision.png)
+
 
 ### Conclusion.
 

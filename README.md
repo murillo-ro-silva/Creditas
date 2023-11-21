@@ -1,11 +1,9 @@
-# Creditas Data Engineering Challenge
+# Data Engineering Challenge
 
 
 ## The Problem: digital media effectiveness
-https://github.com/Creditas/challenge/tree/master/data-engineering
-<br />
 
-## The solve problem: digital media effectiveness
+### The solve problem: digital media effectiveness
 
 In summary, my analysis should answer the 4 questions as described below:
 1. What was the most expensive campaign?
